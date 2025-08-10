@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Background and layout */
+.clock-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Title styling */
+.clock-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Time styling */
+.clock-time {
+  font-size: 5rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Date styling */
+.clock-date {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .clock-title {
+    font-size: 2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  .clock-time {
+    font-size: 4rem;
+    padding: 15px 30px;
+  }
+  .clock-date {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .clock-title {
+    font-size: 2rem;
+  }
+  .clock-time {
+    font-size: 3rem;
+    padding: 12px 20px;
+  }
+  .clock-date {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .clock-title {
+    font-size: 1.5rem;
+  }
+  .clock-time {
+    font-size: 2.2rem;
+    padding: 10px 15px;
+  }
+  .clock-date {
+    font-size: 1.2rem;
   }
 }
