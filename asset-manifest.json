@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/full-clock-app/static/css/main.a9bd5149.css",
+    "main.js": "/full-clock-app/static/js/main.c8c50e1b.js",
+    "index.html": "/full-clock-app/index.html",
+    "main.a9bd5149.css.map": "/full-clock-app/static/css/main.a9bd5149.css.map",
+    "main.c8c50e1b.js.map": "/full-clock-app/static/js/main.c8c50e1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9bd5149.css",
+    "static/js/main.c8c50e1b.js"
+  ]
+}
